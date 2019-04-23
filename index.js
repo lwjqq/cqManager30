@@ -1,0 +1,5 @@
+const express =require('express')
+const dbHelper=require('./zsgjk/抽取')
+const app=express()
+app.use(express.static('views'))
+app.listen(9981)
