@@ -11,13 +11,14 @@ module.exports={
         MongoClient.connect(url, function (err, client) {
             const db = client.db(dbName);
             const collection = db.collection(jihe);
-            collection.find(query).toArray(function(err, docs) {
+            collection.find(query).toArray((err, docs)=>{
                 callback(docs)
+                client.close()
             });
           }); 
     },
   insertOne(jihe,crdsj,callback){
-    MongoClient.connect(url, function (err, client) {
+    MongoClient.connect(url,(err, client)=> {
         const db = client.db(dbName);
         const collection = db.collection(jihe);
         collection.insertOne(crdsj, (err, result) => {

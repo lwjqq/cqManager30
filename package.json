@@ -1,0 +1,26 @@
+{
+  "name": "cqManager30",
+  "version": "1.0.0",
+  "description": "我的代码",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwjqq/cqManager30.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwjqq/cqManager30/issues"
+  },
+  "homepage": "https://github.com/lwjqq/cqManager30#readme"
+}
