@@ -1,4 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
+const ObjectId = require('mongodb').ObjectId
 
 
 // Connection URL
@@ -26,5 +27,6 @@ module.exports={
             client.close()
         });
       });
-  }
+  },
+  ObjectId
 }
